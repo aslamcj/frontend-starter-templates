@@ -9,7 +9,7 @@ A comprehensive, well-documented collection of production-ready boilerplate proj
 
 ## Overview
 
-This repository contains **37 boilerplate templates** organized by category, each featuring:
+This repository contains **43 boilerplate templates** organized by category, each featuring:
 
 - **TypeScript** with strict mode enabled
 - **ESLint & Prettier** pre-configured
@@ -29,6 +29,7 @@ This repository contains **37 boilerplate templates** organized by category, eac
 | [Next.js State Management](#nextjs--state-management) | 3 | Redux Toolkit, Zustand, TanStack Query |
 | [React Testing](#react--testing) | 3 | Jest, Vitest, Playwright |
 | [Next.js Testing](#nextjs--testing) | 3 | Jest, Vitest, Playwright |
+| [React Animation](#react--animation) | 6 | Framer Motion, React Spring, GSAP, Lottie, Motion One, Auto Animate |
 | [Full-Stack Combos](#full-stack-combos) | 4 | Production-ready complete stacks |
 
 ---
@@ -132,6 +133,23 @@ Modern build tools for React applications with different trade-offs in speed, co
 
 ---
 
+## React + Animation
+
+Modern animation libraries for React applications with different capabilities and trade-offs.
+
+| Template | Library | Bundle Size | Best For |
+|----------|---------|-------------|----------|
+| [react-framer-motion](./templates/react/animation/react-framer-motion/) | Framer Motion 11 | ~50KB | Complex UI, gestures, layout |
+| [react-react-spring](./templates/react/animation/react-react-spring/) | React Spring 9 | ~25KB | Physics-based, natural motion |
+| [react-gsap](./templates/react/animation/react-gsap/) | GSAP 3 | ~60KB | Professional, timelines, scroll |
+| [react-lottie](./templates/react/animation/react-lottie/) | Lottie React 2 | ~40KB | After Effects animations |
+| [react-motion-one](./templates/react/animation/react-motion-one/) | Motion 11 | ~3KB | Lightweight, performance |
+| [react-auto-animate](./templates/react/animation/react-auto-animate/) | Auto Animate 0.8 | ~2KB | Zero-config, DOM changes |
+
+> **Recommendation**: Use **Auto Animate** for simple list animations, **Framer Motion** for complex UI, **GSAP** for professional motion design, **Lottie** for designer-created animations.
+
+---
+
 ## Full-Stack Combos
 
 Production-ready templates combining the best tools:
@@ -195,6 +213,7 @@ Comprehensive guides comparing different approaches:
 - [Styling Libraries Comparison](./docs/styling-comparison.md)
 - [State Management Comparison](./docs/state-management-comparison.md)
 - [Testing Frameworks Comparison](./docs/testing-comparison.md)
+- [Animation Libraries Comparison](./docs/animation-libraries.md)
 
 ---
 
@@ -216,7 +235,8 @@ AslamProjects/
     │   ├── build-tools/     # 5 templates
     │   ├── styling/         # 7 templates
     │   ├── state-management/ # 7 templates
-    │   └── testing/         # 3 templates
+    │   ├── testing/         # 3 templates
+    │   └── animation/       # 6 templates
     ├── nextjs/
     │   ├── build-tools/     # 2 templates
     │   ├── styling/         # 3 templates
