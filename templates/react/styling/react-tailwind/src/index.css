@@ -1,0 +1,19 @@
+@import 'tailwindcss';
+
+/* Custom CSS Variables for theming */
+@theme {
+  --color-primary: #3b82f6;
+  --color-primary-hover: #2563eb;
+  --color-secondary: #64748b;
+  --color-accent: #8b5cf6;
+}
+
+/* Base styles */
+body {
+  @apply bg-gray-50 text-gray-900 antialiased dark:bg-gray-950 dark:text-gray-100;
+}
+
+/* Custom utilities */
+@utility container-custom {
+  @apply mx-auto max-w-7xl px-4 sm:px-6 lg:px-8;
+}

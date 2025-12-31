@@ -1,0 +1,33 @@
+@use 'variables' as *;
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: system-ui, sans-serif;
+  background: $color-background;
+  color: $color-text;
+  line-height: 1.6;
+}
+
+.container {
+  min-height: 100vh;
+  padding: $spacing-xl;
+}
+
+.title {
+  font-size: 2.5rem;
+  text-align: center;
+  color: $color-primary;
+}
+
+.subtitle {
+  text-align: center;
+  color: $color-text-muted;
+  margin-top: $spacing-sm;
+}

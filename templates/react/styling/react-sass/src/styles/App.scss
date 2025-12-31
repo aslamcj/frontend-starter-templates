@@ -1,0 +1,45 @@
+@use 'variables' as *;
+@use 'mixins' as *;
+
+.card {
+  @include card;
+  max-width: 400px;
+  margin: $spacing-xl auto;
+  text-align: center;
+
+  h2 {
+    margin-bottom: $spacing-md;
+  }
+}
+
+.count {
+  font-size: 3rem;
+  font-weight: bold;
+  color: $color-primary;
+  margin: $spacing-lg 0;
+}
+
+.button-group {
+  display: flex;
+  gap: $spacing-sm;
+  justify-content: center;
+}
+
+.button {
+  @include button-base;
+  background: $color-primary;
+  color: white;
+
+  &:hover:not(:disabled) {
+    background: $color-primary-hover;
+  }
+
+  &--secondary {
+    background: darken($color-background, 10%);
+    color: $color-text;
+
+    &:hover:not(:disabled) {
+      background: darken($color-background, 15%);
+    }
+  }
+}
